@@ -107,9 +107,9 @@ const char* furi_hal_region_get_name() {
 }
 
 bool furi_hal_region_is_frequency_allowed(uint32_t frequency) {
-    if(!furi_hal_region) {
-        return false;
-    }
+    // if(!furi_hal_region) {
+        return true;
+    // }
 
     const FuriHalRegionBand* band = furi_hal_region_get_band(frequency);
     if(!band) {
